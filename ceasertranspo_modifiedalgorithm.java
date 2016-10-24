@@ -1,5 +1,4 @@
-package ceasertranspo;
-
+// This file contains the entire modified algorithm
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
