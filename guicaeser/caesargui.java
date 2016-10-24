@@ -1,5 +1,3 @@
-package guicaeser;
-
 import javax.swing.*;
 import java.io.*;
 import java.util.*;
@@ -12,7 +10,7 @@ import java.util.logging.Logger;
  *
  * @author Atish
  */
-public class caesergui extends javax.swing.JFrame {
+public class caesargui extends javax.swing.JFrame {
 
     //initialize real code
     
@@ -42,7 +40,7 @@ public class caesergui extends javax.swing.JFrame {
 	public static String decipher2 = "";
 	
     //--
-    public caesergui() {
+    public caesargui() {
         initComponents();
     }
 
@@ -294,7 +292,7 @@ public class caesergui extends javax.swing.JFrame {
              try {
                  encryptinit();
              } catch (IOException ex) {
-                 Logger.getLogger(caesergui.class.getName()).log(Level.SEVERE, null, ex);
+                 Logger.getLogger(caesargui.class.getName()).log(Level.SEVERE, null, ex);
              }
              String encryptedStr = encrypt(input);
              transposeencrypt(encryptedStr);
@@ -317,7 +315,7 @@ public class caesergui extends javax.swing.JFrame {
              try {
                  decryptinit();
              } catch (IOException ex) {
-                 Logger.getLogger(caesergui.class.getName()).log(Level.SEVERE, null, ex);
+                 Logger.getLogger(caesargui.class.getName()).log(Level.SEVERE, null, ex);
              }
              transposedecrypt();
              String decryptedString = decrypt(decipher2);
@@ -341,20 +339,20 @@ public class caesergui extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(caesergui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(caesargui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(caesergui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(caesargui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(caesergui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(caesargui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(caesergui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(caesargui.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new caesergui().setVisible(true);
+                new caesargui().setVisible(true);
             }
         });
     
