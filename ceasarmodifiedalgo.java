@@ -7,15 +7,13 @@ import java.util.Set;
 import java.util.Map.Entry;
 
 
+public class ceasarmodifiedalgo {
 
-public class ceasertranspofull {
-
-
-	private static final int MIN = 0, MAX = 127;
-	private static HashMap<Character, Character> map;
-	private static HashMap<Character, Character> inverseMap;
+    private static final int MIN = 0, MAX = 127;
+    private static HashMap<Character, Character> map;
+    private static HashMap<Character, Character> inverseMap;
     private static int key=0;
-	private static int key1 []=new int [5];
+    private static int key1 []=new int [5];
     private static int q=0;
     private static int mvisit []=new int [MAX];
     public static int rand;
@@ -44,19 +42,19 @@ public class ceasertranspofull {
     initializekeyandip();
 	loadMaps();
 		
-//encrypt ceaser		
+//encrypt ceasar		
 		String encryptedString = encrypt(input);
 		System.out.println("Initial Encrypted String:");
 		System.out.println(encryptedString);
-		System.out.println();            //encryptceaser finish
+		System.out.println();            //encryptceasar finish
 //transpose encrypt and decrypt
          transposeencrypt(encryptedString);
          transposedecrypt();
-//decipher	ceaser	
+//decipher ceasar	
 		String decryptedString = decrypt(decipher2);
 		System.out.println("Final Decrypted Message:");
 		System.out.println(decryptedString);
-		 System.out.println();			//decryptceaserfinish
+		 System.out.println();			//decryptceasarfinish
 		
 	}
 	
